@@ -47,6 +47,12 @@ app.get('/about', (req, response)=>{
         pageTitle: 'About Page Yolo'
     });
 });
+app.get('/projects', (req, response)=>{
+    // response.send('<h1>About Page Here</h1>');
+    response.render('projects.hbs',{
+        pageTitle: 'Project Page Yolo'
+    });
+});
 app.get('/bad', (req, response)=>{
     response.send('<h1>Sorry ! Bad req !</h1>');
 });
